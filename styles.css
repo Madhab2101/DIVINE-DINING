@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 1rem;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+header nav ul li:hover {
+    transform: scale(1.1);
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media a {
+	color: #fc8404f0;
+    margin-left: 1rem;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+    transform: scale(1.1);
+}
+
+.social-media a:hover img {
+    filter: brightness(1.5); /* Adjust brightness for a highlighted effect */
+}
+#hero {
+	background-image: url("hero.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #ffdede;
+	text-align: center;
+}
+
+#hero h1 {
+	color: #ffffff;
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+#hero p {
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+#menu {
+	background-color: #000000;
+	padding: 2rem;
+	text-align: center;
+}
+
+#menu h2 {
+	color: #ffdede;
+	margin-bottom: 2rem;
+}
+
+#menu ul {
+
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu li {
+	margin-right: 2rem;
+}
+
+#gallery {
+	background-color: #f2f2f2;
+	padding: 2rem;
+	text-align: center;
+}
+
+#gallery h2 {
+	margin-bottom: 2rem;
+}
+
+#gallery img {
+	height: 20rem;
+	margin-right: 2rem;
+	width: 30%;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 1rem;
+	text-align: center;
+}
+
+.button {
+	background-color: #f04;
+	border: none;
+	color: #fff;
+	padding: 0.5rem 2rem;
+	text-decoration: none;
+	margin-top: 2rem;
+}
+
+#gallery .gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#gallery .gallery-image {
+    height: 20rem;
+    margin-right: 2rem;
+    width: 30%;
+    transition: transform 0.3s ease-in-out;
+}
+
+#gallery .gallery-image:hover {
+    transform: scale(1.1);
+}
+
