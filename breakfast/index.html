@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+        background-color: #00f7ff;
+        color: #000000;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+    </style>
+    <title>Menu</title>
+  </head>
+
+  <body>
+    <div class="caixa">
+      <h1 class="subtitulos">Menu</h1>
+      <div class="div_subclasses">
+          <h2 class="subtitulos">Breakfast</h2>
+          <div class="ingrediente_descricao">
+            <p><strong>Poha</strong>_____________________<strong>199 rs</strong></p>
+                <p class="ingredientes">Flattened rice (poha), mustard seeds, cumin seeds, curry leaves, green chilies, onions, turmeric powder, salt, lemon juice, and garnished with coriander leaves.</p>
+
+          </div>
+          <div class="ingrediente_descricao">
+            <p><strong>Masala Dosa</strong>__________________________<strong>120 rs</strong></p>
+            <p class="ingredientes">Fermented rice and urad dal batter, potatoes, mustard seeds, cumin seeds, curry leaves, green chilies, onions, turmeric powder, asafoetida (hing), salt, and stuffed with a spiced potato filling, served with coconut chutney and sambar.</p>
+        </div>
+
+        <div class="ingrediente_descricao">
+          <p><strong>Upma</strong>_________________________<strong>100 rs</strong></p>
+          <p class="ingredientes">Semolina (rava/sooji), mustard seeds, urad dal, chana dal, curry leaves, green chilies, onions, ginger, vegetables (optional), turmeric powder, salt, and garnished with coriander leaves.</p>
+      </div>
+
+      <div class="ingrediente_descricao">
+        <p><strong>Rava Dhokla</strong>__________________________<strong>75 rs</strong></p>
+        <p class="ingredientes">Semolina (rava/sooji), yogurt, water, green chilies, ginger, eno (fruit salt), salt, turmeric powder, mustard seeds, sesame seeds, and garnished with coriander leaves.</p>
+    </div>
+
+    <div class="ingrediente_descricao">
+      <p><strong>Aloo paratha</strong>__________________________<strong>120 rs</strong></p>
+      <p class="ingredientes">Wheat flour, potatoes, ghee, green chilies, ginger, coriander leaves, cumin powder, red chili powder, turmeric powder, salt, and served with yogurt or pickle.</p>
+  </div>
+
+  <div class="ingrediente_descricao">
+    <p><strong>Idli</strong>__________________________<strong>65 rs</strong></p>
+    <p class="ingredientes">Fermented rice and urad dal batter, salt, and steamed to make soft, spongy rice cakes.</p>
+  </div>
+
+  <div class="ingrediente_descricao">
+    <p><strong>Poori</strong>__________________________<strong>100 rs</strong></p>
+    <p class="ingredientes">Wheat flour, water, salt, and oil, deep-fried to make puffed and fluffy Indian bread.</p>
+  </div> 
+
+  <div class="ingrediente_descricao">
+    <p><strong>Chole Bhature</strong>__________________________<strong>100 rs</strong></p>
+    <p class="ingredientes">Chickpeas, tomatoes, onions, spices (for chole); All-purpose flour, yogurt, and oil (for bhature).</p>
+  </div> 
+
+  <div class="ingrediente_descricao">
+    <p><strong>Akki Roti</strong>__________________________<strong>100 rs</strong></p>
+    <p class="ingredientes">Rice flour, water, salt, finely chopped onions, green chilies, coriander leaves, and sometimes grated coconut, mixed to form a dough, and then flattened and cooked on a griddle until golden brown.</p>
+  </div> 
+
+  <div class="ingrediente_descricao">
+    <p><strong>Uttapam</strong>__________________________<strong>100 rs</strong></p>
+    <p class="ingredientes">Rice and urad dal batter, finely chopped onions, tomatoes, green chilies, and cilantro, seasoned with salt and cooked on a griddle until crispy.</p>
+  </div> 
+
+  <div class="ingrediente_descricao">
+    <p><strong>Puri Bhaji</strong>__________________________<strong>100 rs</strong></p>
+    <p class="ingredientes">Wheat flour, water, salt (for puri), and potatoes, onions, tomatoes, spices (such as cumin, turmeric, and garam masala) for the spiced potato curry (bhaji).</p>
+  </div> 
+
+  <button class="back-to-top" onclick="scrollToTop()">UP</button>
+</div>
+</div>
+
+<script>
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+window.onscroll = function () {
+  var button = document.querySelector('.back-to-top');
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    button.style.display = 'block';
+  } else {
+    button.style.display = 'none';
+  }
+};
+</script>
+</body>
+</html>
